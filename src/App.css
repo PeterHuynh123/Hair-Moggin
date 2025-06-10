@@ -36,3 +36,133 @@
     transform: rotate(360deg);
   }
 }
+
+/* Root and layout */
+.root {
+  min-height: 100vh;
+  background: #0c0c0c;
+  color: #e3e3e3;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Goldman', sans-serif;
+}
+
+.header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2vw;
+}
+
+.title {
+  font-family: 'Monument Extended', sans-serif;
+  font-weight: 900;
+  font-size: clamp(2.5rem, 8vw, 8rem);
+  letter-spacing: 0.05em;
+  color: #e3e3e3;
+  transform: rotate(-3deg);
+  margin: 0;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2vw 4vw 0 4vw;
+  box-sizing: border-box;
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.left {
+  max-width: 35vw;
+  align-items: flex-start;
+}
+.right {
+  max-width: 35vw;
+  align-items: flex-end;
+}
+
+.instruct {
+  font-family: 'Goldman', sans-serif;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  margin-bottom: 2vw;
+  color: #e3e3e3;
+}
+
+.faceshapes {
+  margin-bottom: 2vw;
+}
+
+.section-title {
+  font-family: 'Monument Extended', sans-serif;
+  font-weight: 900;
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  margin: 0 0 0.5vw 0;
+  color: #e3e3e3;
+}
+
+.shape {
+  font-family: 'Goldman', sans-serif;
+  font-size: clamp(1rem, 1.3vw, 1.3rem);
+  margin-bottom: 0.3vw;
+}
+
+.recommend {
+  margin-bottom: 2vw;
+  text-align: right;
+}
+
+.recommend-label {
+  font-family: 'Monument Extended', sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.1rem, 1.5vw, 1.5rem);
+  color: #e3e3e3;
+}
+
+.recommend-item {
+  font-family: 'Goldman', sans-serif;
+  font-size: clamp(1rem, 1.3vw, 1.3rem);
+  margin-bottom: 0.3vw;
+}
+
+.filler {
+  font-family: 'Monument Extended', sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  color: #e3e3e3;
+  margin-top: auto;
+  margin-bottom: 1vw;
+  word-break: break-word;
+}
+.filler-left {
+  text-align: left;
+}
+.filler-right {
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .main {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 2vw 2vw 0 2vw;
+  }
+  .left, .right {
+    max-width: 100vw;
+    align-items: flex-start;
+  }
+  .right {
+    align-items: flex-end;
+  }
+}
