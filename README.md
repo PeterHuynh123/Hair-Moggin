@@ -17,4 +17,5 @@
 | Hosting   | idk yet                           |
 | Haircut DB| idk yet                           |
 
-![image](https://github.com/user-attachments/assets/ce08fca7-1a6b-43a2-801a-ab1f3c982c29)
+![image](https://github.com/user-attachments/assets/8db3cce9-b9c5-4faf-baf2-3048a2bd5680)
+
