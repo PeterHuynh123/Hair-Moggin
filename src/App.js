@@ -11,9 +11,9 @@ function App() {
           <div className="instruct">click on the screen to start webcam</div>
           <div className="faceshapes">
             <h2 className="section-title">Faceshapes</h2>
-            <div className="shape s1">Best Match: SHAPE 1</div>
-            <div className="shape s2">Best Match: SHAPE 1</div>
-            <div className="shape s3">Best Match: SHAPE 1</div>
+            <div className="recommend-item s1">Best Match: SHAPE 1</div>
+            <div className="recommend-item s2">Best Match: SHAPE 1</div>
+            <div className="recommend-item s3">Best Match: SHAPE 1</div>
           </div>
           <div className="filler filler-left">
             Lorem Ipsum<br/>
@@ -23,6 +23,12 @@ function App() {
             OH wowww<br/>
             okay thats all<br/>
             But i guess don<br/>
+            Tirila tirlai sasd<br/>
+            Brr brr tun tung tun <br/>
+            skibid ie oNe fi don<br/>
+            lorem ipsum<br/>
+            lorem ipsum<br/>
+            lorem ipsum<br/>  
             outnei
           </div>
         </section>
@@ -44,7 +50,12 @@ function App() {
           <div className="filler filler-right">
             Ipsum<br/>
             Hihi haha<br/>
-            WHAT the
+            WHAT the<br/>
+            But i guess don<br/>
+            Tirila tirlai sasd<br/>
+            Brr brr tun tung tun <br/>
+            skibid ie oNe fi don<br/>
+            lorem ipsum<br/>
           </div>
         </section>
       </main>
