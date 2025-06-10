@@ -1,6 +1,6 @@
 # HAIR MOGGIN
 
-**FaceShape** is a web application that uses real-time camera input to detect a user's face shape and recommend suitable hairstyles/barbershop or salon. The web app initially will only work with male faces only.
+**FaceShape** is a web application that uses real-time camera input to detect a user's face shape and recommend suitable hairstyles/barbershop or salon. The web app initially will only provide men's hairstyles.
 
 ## Features
 
@@ -16,3 +16,5 @@
 | Backend   | idk yet                           |
 | Hosting   | idk yet                           |
 | Haircut DB| idk yet                           |
+
+![image](https://github.com/user-attachments/assets/ce08fca7-1a6b-43a2-801a-ab1f3c982c29)
