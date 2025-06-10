@@ -16,3 +16,5 @@
 | Backend   | idk yet                           |
 | Hosting   | idk yet                           |
 | Haircut DB| idk yet                           |
+
+![image](https://github.com/user-attachments/assets/ce08fca7-1a6b-43a2-801a-ab1f3c982c29)
