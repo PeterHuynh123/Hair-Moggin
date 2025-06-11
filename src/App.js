@@ -1,4 +1,5 @@
 import './App.css';
+import CameraFrame from './components/CameraFrame';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             outnei
           </div>
         </section>
+        <CameraFrame />
         <section className="right">
           <div className="recommend haircut">
             <div className="recommend-label">Recommended</div>

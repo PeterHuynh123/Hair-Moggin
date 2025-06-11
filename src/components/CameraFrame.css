@@ -1,0 +1,30 @@
+.camera-frame-container {
+  position: fixed;
+  align-self: center;
+  width: 85vw;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  z-index: 100;
+}
+
+.camera-frame {
+  width: 100%;
+  height: auto;
+  display: block;
+  z-index: 2;
+  position: relative;
+}
+
+.loading-gif {
+  position: absolute;
+  top: 12.5%;
+  left: 10.5%;
+  width: 79%;
+  height: 74%;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+} 
