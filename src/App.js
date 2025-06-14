@@ -45,10 +45,12 @@ function App() {
           <div className="recommend barbershop">
             <div className="recommend-label">Recommended</div>
             <div className="section-title">Barbershop</div>
+            <div className="current-location">*around current location</div>
             <div className="recommend-item shop1">Whata babershop</div>
             <div className="recommend-item shop2">Whata babershop</div>
             <div className="recommend-item shop3">Whata babershop</div>
           </div>
+          
           <div className="filler filler-right">
             Ipsum<br/>
             Hihi haha<br/>
