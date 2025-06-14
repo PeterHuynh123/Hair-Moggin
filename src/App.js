@@ -8,6 +8,9 @@ function App() {
         <h1 className="title">HAIR MOGGIN</h1>
       </header>
       <main className="main">
+        <section className="camera-mobile-wrapper">
+          <CameraFrame />
+        </section>
         <section className="left">
           <div className="instruct">click on the screen to start webcam</div>
           <div className="faceshapes">
@@ -33,7 +36,6 @@ function App() {
             outnei
           </div>
         </section>
-        <CameraFrame />
         <section className="right">
           <div className="recommend haircut">
             <div className="recommend-label">Recommended</div>

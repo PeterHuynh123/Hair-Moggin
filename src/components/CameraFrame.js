@@ -6,26 +6,40 @@ import './CameraFrame.css';
 const CameraFrame = () => {
   const [showCamera, setShowCamera] = useState(false);
   const videoRef = useRef(null);
+  const streamRef = useRef(null); // To keep track of the stream for cleanup
 
-  // run this when showCamera changes
+  // Handle camera on/off
   useEffect(() => {
     if (showCamera) {
-      // Request access to the user's camera
       navigator.mediaDevices.getUserMedia({ video: true })
         .then((stream) => {
           if (videoRef.current) {
             videoRef.current.srcObject = stream;
           }
+          streamRef.current = stream;
         })
         .catch((err) => {
           console.error("Error accessing camera:", err);
-          setShowCamera(false); // Reset state if camera access fails
+          setShowCamera(false);
         });
+    } else {
+      // stop camera stream
+      if (streamRef.current) {
+        streamRef.current.getTracks().forEach(track => track.stop());
+        streamRef.current = null;
+      }
+      if (videoRef.current) {
+        videoRef.current.srcObject = null;
+      }
     }
   }, [showCamera]);
 
   const handleLoadingClick = () => {
     setShowCamera(true);
+  };
+
+  const handleVideoClick = () => {
+    setShowCamera(false);
   };
 
   return (
@@ -51,8 +65,8 @@ const CameraFrame = () => {
             ref={videoRef}
             className="camera-feed"
             autoPlay
-            playsInline // doesnt go full screen on mobile
-            style={{ width: '100%', height: '100%' }}
+            playsInline
+            onClick={handleVideoClick}
           />
         )}
       </div>

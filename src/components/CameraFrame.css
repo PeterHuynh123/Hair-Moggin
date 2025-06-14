@@ -1,5 +1,5 @@
 .camera-frame-container {
-  position: fixed;
+  position: absolute;
   top: 10%;
   left: 0;
   width: 100vw;
@@ -13,41 +13,49 @@
 }
 
 .camera-frame {
-  width: 85vw;
-  max-width: 1200px;
+  width: 70vw;
   height: auto;
   display: block;
   z-index: 1;
   position: fixed;
-  pointer-events: none;
+  pointer-events: auto;
 }
-/* yes height is 45vw, no mistake were made */
-.camera-frame-content .loading-gif {
+
+.camera-frame-content {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 45vw;
-  max-width: 700px;
-  height: 45vw; 
-  max-height: 600px;
+  width: 95vw;
+  height: 80vw;
   transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.camera-frame-content .loading-gif{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 37vw;
+  height: 30vw; 
+  transform: translate(-50%, -60%);
   object-fit: cover;
   z-index: 0;
-  pointer-events: none;
-} 
+  pointer-events: auto;
+}
 
 .camera-feed {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 45vw;
-  max-width: 700px;
-  height: 45vw;
-  max-height: 600px;
-  transform: translate(-50%, -50%);
+  width: 36vw;
+  height: 30vw;
+  transform: translate(-50%, -60%);
   object-fit: cover;
   z-index: 0;
-}
+  pointer-events: auto;
+} 
 
 .camera-frame-content:hover {
   cursor: pointer;
