@@ -11,7 +11,7 @@ const CameraFrame = () => {
   // Handle camera on/off
   useEffect(() => {
     if (showCamera) {
-      navigator.mediaDevices.getUserMedia({ video: true })
+      navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user' } })
         .then((stream) => {
           if (videoRef.current) {
             videoRef.current.srcObject = stream;
@@ -46,7 +46,8 @@ const CameraFrame = () => {
     <div className="camera-frame-container">
       <img 
         src={cameraFrame} 
-        onClick={handleLoadingClick} 
+        
+        onClick= {showCamera ? handleVideoClick : handleLoadingClick} 
         alt="Camera Frame" 
         className="camera-frame" 
         style={{ pointerEvents: 'auto' }}
