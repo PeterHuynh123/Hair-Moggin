@@ -19,7 +19,8 @@
 
 
 ## Current UI
-![image](https://github.com/user-attachments/assets/b06c7d84-9f4a-4e07-a184-42816e098b7e)
+![image](https://github.com/user-attachments/assets/77454ab4-5ec2-4dd0-b3ce-686cf7a37773)
+
 
 ## Draft UI
 ![image](https://github.com/user-attachments/assets/bc0f5c93-9b94-4e48-a9fd-904d6ffff36b)
