@@ -1,5 +1,10 @@
 import './App.css';
 import CameraFrame from './components/CameraFrame';
+import HairsCarousel from './components/HairsCarousel'
+
+const OPTIONS = { loop: true }
+const SLIDE_COUNT = 6
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 function App() {
   return (
@@ -40,9 +45,12 @@ function App() {
           <div className="recommend haircut">
             <div className="recommend-label">Recommended</div>
             <div className="section-title">Haircut</div>
-            <div className="recommend-item cut1">Whata cut</div>
+            {/* <div className="recommend-item cut1">Whata cut</div>
             <div className="recommend-item cut2">Whata cut</div>
-            <div className="recommend-item cut3">Whata cut</div>
+            <div className="recommend-item cut3">Whata cut</div> */}
+            <section className="embla">
+              <HairsCarousel slides={SLIDES} options={OPTIONS} />
+            </section>
           </div>
           <div className="recommend barbershop">
             <div className="recommend-label">Recommended</div>
