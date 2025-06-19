@@ -1,9 +1,10 @@
 import './App.css';
 import CameraFrame from './components/CameraFrame';
 import HairsCarousel from './components/HairsCarousel'
+import './components/HairsCarousel.css'
 
 const OPTIONS = { loop: true }
-const SLIDE_COUNT = 6
+const SLIDE_COUNT = 21
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 function App() {
@@ -24,22 +25,6 @@ function App() {
             <div className="recommend-item s2">Best Match: SHAPE 1</div>
             <div className="recommend-item s3">Best Match: SHAPE 1</div>
           </div>
-          <div className="filler filler-left">
-            Lorem Ipsum<br/>
-            Hihi haha<br/>
-            WHAT the<br/>
-            Whasddg EH<br/>
-            OH wowww<br/>
-            okay thats all<br/>
-            But i guess don<br/>
-            Tirila tirlai sasd<br/>
-            Brr brr tun tung tun <br/>
-            skibid ie oNe fi don<br/>
-            lorem ipsum<br/>
-            lorem ipsum<br/>
-            lorem ipsum<br/>  
-            outnei
-          </div>
         </section>
         <section className="right">
           <div className="recommend haircut">
@@ -59,17 +44,6 @@ function App() {
             <div className="recommend-item shop1">Whata babershop</div>
             <div className="recommend-item shop2">Whata babershop</div>
             <div className="recommend-item shop3">Whata babershop</div>
-          </div>
-          
-          <div className="filler filler-right">
-            Ipsum<br/>
-            Hihi haha<br/>
-            WHAT the<br/>
-            But i guess don<br/>
-            Tirila tirlai sasd<br/>
-            Brr brr tun tung tun <br/>
-            skibid ie oNe fi don<br/>
-            lorem ipsum<br/>
           </div>
         </section>
       </main>
