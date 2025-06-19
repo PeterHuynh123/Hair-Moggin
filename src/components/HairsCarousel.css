@@ -5,6 +5,7 @@
   --slide-spacing: 2rem;
   --slide-size: 55%;
   display: flex;
+  align-items: center;
 }
 .embla__viewport {
   overflow: hidden;
