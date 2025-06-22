@@ -2,6 +2,7 @@ import './App.css';
 import CameraFrame from './components/CameraFrame';
 import HairsCarousel from './components/HairsCarousel'
 import './components/HairsCarousel.css'
+import ThemeToogleButton from './components/ThemeToogleButton';
 
 const OPTIONS = { loop: true }
 const SLIDE_COUNT = 21
@@ -10,6 +11,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 function App() {
   return (
     <div className="root">
+      <ThemeToogleButton />
       <header className="header">
         <h1 className="title">HAIR MOGGIN</h1>
       </header>

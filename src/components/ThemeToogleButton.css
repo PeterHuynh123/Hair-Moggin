@@ -1,0 +1,18 @@
+.theme-toggle-btn {
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  background: var(--background);
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle-icon {
+  font-size: 32px;
+  color: var(--primary);
+  cursor: pointer;
+  transition: color 0.3s;
+} 

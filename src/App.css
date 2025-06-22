@@ -26,8 +26,8 @@
 /* Root and layout */
 .root {
   min-height: 100vh;
-  background: #0c0c0c;
-  color: #e3e3e3;
+  background: var(--background);
+  color: var(--primary);
   display: flex;
   flex-direction: column;
   font-family: 'Goldman', sans-serif;
@@ -51,7 +51,7 @@
   font-weight: 900;
   font-size: clamp(2.5rem, 8vw, 8rem);
   letter-spacing: 0.05em;
-  color: #e3e3e3;
+  color: var(--primary);
   transform: rotate(-1deg);
   margin: 0;
   text-align: center;
@@ -98,7 +98,7 @@
   font-family: 'Goldman', sans-serif;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
   margin-bottom: 2vw;
-  color: #e3e3e3;
+  color: var(--primary);
 }
 
 .faceshapes {
@@ -110,7 +110,7 @@
   font-weight: 900;
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   margin: 0 0 0.5vw 0;
-  color: #e3e3e3;
+  color: var(--primary);
 }
 
 .recommend {
@@ -122,7 +122,7 @@
   font-family: 'Monument Extended', sans-serif;
   font-weight: 400;
   font-size: clamp(1.1rem, 1.5vw, 1.5rem);
-  color: #e3e3e3;
+  color: var(--primary);
   z-index: 10;
 }
 
@@ -141,14 +141,12 @@
   cursor: pointer;
   transform: translateY(-0.2vw);
   text-shadow:
-  0 0 3px #0c0c0c,
-  0 0 5px #0c0c0c,
-  0 0 11px #0c0c0c,
-  0 0 21px rgb(98, 0, 255),
-  0 0 41px rgb(98, 0, 255),
-  0 0 46px rgb(98, 0, 255),
-  0 0 51px rgb(98, 0, 255),
-  0 0 76px rgb(98, 0, 255);
+  0 0 3px var(--accent),
+  0 0 5px var(--accent),
+  0 0 11px var(--accent),
+  0 0 21px var(--accent),
+  0 0 41px var(--accent),
+  0 0 46px var(--accent);
   transform: rotate(1deg);
 }
 
@@ -156,7 +154,7 @@
   font-family: 'Monument Extended', sans-serif;
   font-weight: 400;
   font-size: clamp(1.2rem, 2vw, 2rem);
-  color: #e3e3e3;
+  color: var(--primary);
   margin-top: auto;
   margin-bottom: 1vw;
   word-break: break-word;
