@@ -4,7 +4,7 @@ import { Within } from "@theme-toggles/react";
 import "./ThemeToogleButton.css";
 
 const DARK_PALETTE = ["#e3e3e3", "#0c0c0c", "#6200ff"];
-const LIGHT_PALETTE = ["#6200ff", "#e3e3e3", "#0c0c0c"];
+const LIGHT_PALETTE = ["#0c0c0c", "#e3e3e3", "#6200ff"];
 
 function setCSSVariables(palette) {
   document.documentElement.style.setProperty("--primary", palette[0]);
