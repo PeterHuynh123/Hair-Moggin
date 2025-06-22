@@ -12,7 +12,7 @@
 | Part      | Tech                              |
 |-----------|-----------------------------------|
 | Frontend  | React + other when finalizing UI  |
-| ML        | MediaPipe                         |
+| ML        | MediaPipe?                         |
 | Backend   | idk yet                           |
 | Hosting   | idk yet                           |
 | Haircut DB| idk yet                           |
