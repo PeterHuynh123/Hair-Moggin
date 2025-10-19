@@ -1,0 +1,167 @@
+.App {
+  text-align: center;
+  position: fixed;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Root and layout */
+.root {
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Goldman', sans-serif;
+  z-index: 10;
+}
+* {
+  background-color: 10px solid red;
+}
+
+.header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2vw;
+  z-index: 50;
+}
+
+.title {
+  font-family: 'Monument Extended', sans-serif;
+  font-weight: 900;
+  font-size: clamp(2.5rem, 8vw, 8rem);
+  letter-spacing: 0.05em;
+  color: var(--primary);
+  transform: rotate(-1deg);
+  margin: 0;
+  text-align: center;
+  transition-duration: 0.1s; 
+  z-index: 50;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 10;
+  height: 100%;
+}
+
+.camera-mobile-wrapper {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: -10;
+  order: 1;
+}
+
+.left {
+  max-width: 35vw;
+  margin-left: 0;
+  padding-left: 2vw;
+  height: 100%;
+}
+
+.right {
+  max-width: 35vw;
+  margin-right: 0;
+  padding-right: 2vw;
+  height: 100%;
+}
+
+.instruct {
+  font-family: 'Goldman', sans-serif;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  margin-bottom: 2vw;
+  color: var(--primary);
+}
+
+.faceshapes {
+  margin-bottom: 2vw;
+}
+
+.section-title {
+  font-family: 'Monument Extended', sans-serif;
+  font-weight: 900;
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  margin: 0 0 0.5vw 0;
+  color: var(--primary);
+}
+
+.recommend {
+  margin-bottom: 2vw;
+  text-align: right;
+}
+
+.recommend-label {
+  font-family: 'Monument Extended', sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.1rem, 1.5vw, 1.5rem);
+  color: var(--primary);
+  z-index: 10;
+}
+
+.recommend-item {
+  font-family: 'Goldman', sans-serif;
+  font-size: clamp(1rem, 1.3vw, 1.3rem);
+  margin-bottom: 0.3vw;
+}
+
+.recommend-item:hover {
+  cursor: pointer;
+  transform: translateY(-0.2vw);
+}
+
+.header:hover {
+  cursor: pointer;
+  transform: translateY(-0.2vw);
+  text-shadow:
+  0 0 3px var(--accent),
+  0 0 5px var(--accent),
+  0 0 11px var(--accent),
+  0 0 21px var(--accent),
+  0 0 41px var(--accent),
+  0 0 46px var(--accent);
+  transform: rotate(1deg);
+}
+
+.filler {
+  font-family: 'Monument Extended', sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  color: var(--primary);
+  margin-top: auto;
+  margin-bottom: 1vw;
+  word-break: break-word;
+}
+.filler-left {
+  text-align: left;
+}
+.filler-right {
+  text-align: right;
+}
