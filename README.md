@@ -19,7 +19,8 @@
 
 
 ## Current UI
-![Uploading image.png…]()
+<img width="1874" height="973" alt="image" src="https://github.com/user-attachments/assets/1749cd1a-5142-43f5-aa1a-3a587e8bfdc8" />
+
 
 
 
