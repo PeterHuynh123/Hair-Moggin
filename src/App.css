@@ -38,18 +38,18 @@
 }
 
 .header {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 2vw;
+  margin-top: 24px;
   z-index: 50;
 }
 
 .title {
   font-family: 'Monument Extended', sans-serif;
   font-weight: 900;
-  font-size: clamp(2.5rem, 8vw, 8rem);
+  font-size: clamp(40px, 8vw, 128px);
   letter-spacing: 0.05em;
   color: var(--primary);
   transform: rotate(-1deg);
@@ -96,40 +96,40 @@
 
 .instruct {
   font-family: 'Goldman', sans-serif;
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
-  margin-bottom: 2vw;
+  font-size: clamp(16px, 1.5vw, 24px);
+  margin-bottom: 24px;
   color: var(--primary);
 }
 
 .faceshapes {
-  margin-bottom: 2vw;
+  margin-bottom: 24px;
 }
 
 .section-title {
   font-family: 'Monument Extended', sans-serif;
   font-weight: 900;
-  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
-  margin: 0 0 0.5vw 0;
+  font-size: clamp(24px, 2.5vw, 40px);
+  margin: 0 0 8px 0;
   color: var(--primary);
 }
 
 .recommend {
-  margin-bottom: 2vw;
+  margin-bottom: 24px;
   text-align: right;
 }
 
 .recommend-label {
   font-family: 'Monument Extended', sans-serif;
   font-weight: 400;
-  font-size: clamp(1.1rem, 1.5vw, 1.5rem);
+  font-size: clamp(18px, 1.5vw, 24px);
   color: var(--primary);
   z-index: 10;
 }
 
 .recommend-item {
   font-family: 'Goldman', sans-serif;
-  font-size: clamp(1rem, 1.3vw, 1.3rem);
-  margin-bottom: 0.3vw;
+  font-size: clamp(16px, 1.3vw, 21px);
+  margin-bottom: 4px;
 }
 
 .recommend-item:hover {
@@ -164,4 +164,119 @@
 }
 .filler-right {
   text-align: right;
+}
+@media (orientation: portrait) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .left, .right {
+    max-width: 95vw;
+    width: 95vw;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .left {
+    margin-top: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right {
+    margin-top: 10px;
+    order: 3;
+  }
+
+  .instruct {
+    order: 1;
+    margin-bottom: 40px;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .faceshapes {
+    order: 2;
+    margin-bottom: 40px;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .embla {
+    order: 3;
+    width: 95vw !important;
+    margin: 0 auto 20px auto;
+    padding: 8px 0;
+  }
+
+  .recommend {
+    order: 4;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .section-title {
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .recommend-label {
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .recommend-item {
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .faceshapes-title {
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .faceshapes-recommendation {
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .recommended-haircut {
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .filler-left, .filler-right {
+    text-align: center;
+  }
 }

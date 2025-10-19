@@ -56,6 +56,38 @@
   object-fit: cover;
   z-index: 0;
   pointer-events: auto;
+}
+
+@media (orientation: portrait) {
+  .camera-frame-container {
+    top: 15%;
+    height: 60vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .camera-frame {
+    width: 90vw;
+    min-width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .camera-frame-content {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .camera-frame-content .loading-gif {
+    width: 70vw;
+    height: 60vw;
+  }
+
+  .camera-feed {
+    width: 70vw;
+    height: 60vw;
+  }
 } 
 
 .camera-frame-content:hover {
