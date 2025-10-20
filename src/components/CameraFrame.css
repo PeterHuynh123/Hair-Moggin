@@ -13,8 +13,8 @@
 }
 
 .camera-frame {
-  width: 70vw;
-  min-width: 70%;
+  width: 40vw;
+  /* min-width: 70%; */
   height: auto;
   display: block;
   z-index: 1;
