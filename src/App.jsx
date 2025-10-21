@@ -13,7 +13,7 @@ function App() {
     <div className="root">
       <ThemeToogleButton />
       <header className="header">
-        <h1 className="title">HAIR MOGGIN</h1>
+        <h1 className="title">HAIR MAXXING</h1>
       </header>
       <main className="main">
         <section className="camera-mobile-wrapper">

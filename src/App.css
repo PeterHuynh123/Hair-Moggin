@@ -122,6 +122,10 @@
   text-align: right;
 }
 
+.recommend.barbershop {
+  margin-top: -40px;
+}
+
 .recommend-label {
   font-family: 'Monument Extended', sans-serif;
   font-weight: 400;
