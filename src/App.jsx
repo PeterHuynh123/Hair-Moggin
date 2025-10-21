@@ -23,15 +23,13 @@ function App() {
           <div className="instruct">click on the screen to start webcam</div>
           <div className="faceshapes">
             <h2 className="section-title">Faceshapes</h2>
-            <div className="recommend-item s1">Best Match: SHAPE 1</div>
-            <div className="recommend-item s2">Best Match: SHAPE 1</div>
-            <div className="recommend-item s3">Best Match: SHAPE 1</div>
+            <div className="recommend-item">Best Match: SHAPE 1</div>
           </div>
         </section>
         <section className="right">
           <div className="recommend haircut">
             <div className="recommend-label">Recommended</div>
-            <div className="section-title">Haircut</div>
+            <div className="section-title">Haircuts</div>
             {/* <div className="recommend-item cut1">Whata cut</div>
             <div className="recommend-item cut2">Whata cut</div>
             <div className="recommend-item cut3">Whata cut</div> */}

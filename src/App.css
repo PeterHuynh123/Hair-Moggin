@@ -1,6 +1,8 @@
 .App {
   text-align: center;
-  position: fixed;
+  position: relative;
+  min-height: 100vh;
+  overflow-y: auto;
 }
 
 .App-logo {
@@ -265,13 +267,6 @@
   }
 
   .faceshapes-recommendation {
-    width: 95vw;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .recommended-haircut {
     width: 95vw;
     margin-left: auto;
     margin-right: auto;
