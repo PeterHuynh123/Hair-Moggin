@@ -1,0 +1,98 @@
+.camera-frame-container {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  z-index: -100;
+  overflow: hidden;
+}
+
+.camera-frame {
+  width: 40vw;
+  /* min-width: 70%; */
+  height: auto;
+  display: block;
+  z-index: 1;
+  position: fixed;
+  pointer-events: auto;
+}
+
+.camera-frame-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 95vw;
+  height: 80vw;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.camera-frame-content .loading-gif{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 37vw;
+  height: 30vw; 
+  transform: translate(-50%, -60%);
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: auto;
+}
+
+.camera-feed {
+  position: absolute;
+  top: 29%;
+  /* left: 50%; */
+  width: 36vw;
+  height: 30vw;
+  transform: translate(-50%, -60%);
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: auto;
+  transform: scaleX(-1);
+}
+
+@media (orientation: portrait) {
+  .camera-frame-container {
+    top: 15%;
+    height: 60vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .camera-frame {
+    width: 90vw;
+    min-width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .camera-frame-content {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .camera-frame-content .loading-gif {
+    width: 70vw;
+    height: 60vw;
+  }
+
+  .camera-feed {
+    width: 70vw;
+    height: 60vw;
+    transform: scaleX(-1);
+    top: 5%;
+  }
+} 
+
+.camera-frame-content:hover {
+  cursor: pointer;
+}
