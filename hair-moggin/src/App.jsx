@@ -5,26 +5,65 @@ import HairsCarousel from './components/HairsCarousel';
 import './components/HairsCarousel.css';
 import ThemeToogleButton from './components/ThemeToogleButton';
 
-const OPTIONS = { loop: true };
+const OPTIONS = { axis: 'y', dragFree: true }
 const SLIDE_COUNT = 21;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 function App() {
   const [faceShape, setFaceShape] = useState('Analyzing...');
+  const [hairCuts, setHaircuts] = useState([
+                "textured_crop.png",
+                "quiff.png",
+                "pompadour.png",
+                "side_part.png",
+                "crew_cut.png",
+                "slicked_back.png",
+                "medium_wavy_top.png",
+                "buzz_cut.png",
+                "messy_fringe.png",
+                "side_swept_fringe.png",
+                "angular_fringe.png",
+                "medium_wavy_side_sweep.png",
+                "faux_hawk.png",
+                "high_fade.png"
+            ])
+  const [isLocked, setIsLocked] = useState(false)
 
   useEffect(() => {
     const eventSource = new EventSource('http://127.0.0.1:5000/faceshapes');
 
+    // fetch('http://127.0.0.1:5000/shape-images')
+    //   .then(res => res.json())
+    //   .then(data => {
+    //     console.log(data)
+    //   }
+    //   )
+
     eventSource.onmessage = (event) => {
       console.log(event.data);
-      setFaceShape(event.data);
+      // Only update if not locked
+      if (!isLocked) {
+        setFaceShape(event.data);
+        if (event.data !== "Please re-adjust your face") {
+          fetch(`http://127.0.0.1:5000/haircuts/${event.data}`)
+          .then(res => res.json())
+          .then(data => {
+            setHaircuts(data);
+            console.log(faceShape, data)
+          }
+          )
+          .catch(error => {
+            console.log(error)
+          })
+        }
+      }
     };
 
     return () => {
       eventSource.close();
     }
     
-  }, []);
+  }, [isLocked, faceShape]);
 
   return (
     <div className='root'>
@@ -41,6 +80,12 @@ function App() {
           <div className='faceshapes'>
             <h2 className='section-title'>Faceshapes</h2>
             <div className='recommend-item'>Best Match: {faceShape}</div>
+            <button 
+              className='lock-button'
+              onClick={() => setIsLocked(!isLocked)}
+            >
+              {isLocked ? 'Unlock faceshape stream' : 'Lock faceshape'}
+            </button>
           </div>
         </section>
         <section className='right'>
@@ -51,16 +96,8 @@ function App() {
             <div className="recommend-item cut2">Whata cut</div>
             <div className="recommend-item cut3">Whata cut</div> */}
             <section className='embla'>
-              <HairsCarousel slides={SLIDES} options={OPTIONS} />
+              <HairsCarousel hairCuts={hairCuts} options={OPTIONS} />
             </section>
-          </div>
-          <div className='recommend barbershop'>
-            <div className='recommend-label'>Recommended</div>
-            <div className='section-title'>Barbershop</div>
-            <div className='current-location'>*around current location</div>
-            <div className='recommend-item shop1'>Whata babershop</div>
-            <div className='recommend-item shop2'>Whata babershop</div>
-            <div className='recommend-item shop3'>Whata babershop</div>
           </div>
         </section>
       </main>
