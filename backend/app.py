@@ -24,71 +24,39 @@ app.config['ALLOWED_EXTENSIONS'] = {'jpg', 'jpeg', 'png'}
 
 # dictionary of suitable haircuts for faceshapes
 haircuts = {
-    "Oval" : [
-                "textured_crop.png",
-                "quiff.png",
-                "pompadour.png",
-                "side_part.png",
-                "crew_cut.png",
-                "slicked_back.png",
-                "medium_wavy_top.png",
-                "buzz_cut.png",
-                "messy_fringe.png",
-                "side_swept_fringe.png",
-                "angular_fringe.png",
-                "medium_wavy_side_sweep.png",
-                "faux_hawk.png",
-                "high_fade.png"
-            ],
+    "Heart": [
+        "curtains_bang.png",
+        "textured_fringe.png",
+        "crop_cut.png",
+        "taper_fade.png",
+        "undercut.png",
+        "ivy_league.png"
+    ],
+    "Oval": [
+        "ivy_league.png",
+        "crop_cut.png",
+        "taper_fade.png",
+        "crew_cut.png",
+        "buzz_cut.png",
+        "warrior_cut.png"
+    ],
     "Square": [
-            "textured_crop.png",
-            "side_part.png",
-            "quiff.png",
-            "pompadour.png",
-            "buzz_cut.png",
-            "slicked_back.png",
-            "messy_fringe.png",
-            "faux_hawk.png",
-            "high_fade.png",
-            "crew_cut.png",
-            "medium_wavy_top.png",
-            "angular_fringe.png",
-            "medium_wavy_side_sweep.png",
-            "side_swept_fringe.png"
-        ],
-    "Heart" : [
-            "side_swept_fringe.png",
-            "side_part.png",
-            "textured_crop.png",
-            "angular_fringe.png",
-            "medium_wavy_side_sweep.png",
-            "slicked_back.png",
-            "quiff.png",
-            "pompadour.png",
-            "messy_fringe.png",
-            "medium_wavy_top.png",
-            "crew_cut.png",
-            "buzz_cut.png",
-            "high_fade.png",
-            "faux_hawk.png"
-        ],
-    "Round" : [
-            "pompadour.png",
-            "quiff.png",
-            "high_fade.png",
-            "faux_hawk.png",
-            "textured_crop.png",
-            "side_part.png",
-            "slicked_back.png",
-            "crew_cut.png",
-            "angular_fringe.png",
-            "side_swept_fringe.png",
-            "messy_fringe.png",
-            "medium_wavy_top.png",
-            "medium_wavy_side_sweep.png",
-            "buzz_cut.png"
-        ]
-    }
+        "textured_fringe.png",
+        "crop_cut.png",
+        "taper_fade.png",
+        "undercut.png",
+        "buzz_cut.png",
+        "modern_mullet.png"
+    ],
+    "Round": [
+        "spiky_short.png",
+        "modern_mullet.png",
+        "undercut.png",
+        "taper_fade.png",
+        "buzz_cut.png",
+        "crop_cut.png"
+    ]
+}
 
 # Initialize MediaPipe Face Landmarker
 base_options = python.BaseOptions(
